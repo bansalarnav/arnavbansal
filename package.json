@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier  --write \"{pages, components, components/sections/}/*.{js,scss}\""
+  },
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "aos": "^2.3.4",
+    "classnames": "^2.2.6",
+    "next": "9.5.5",
+    "next-compose-plugins": "^2.2.0",
+    "next-svgr": "0.0.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-tsparticles": "^1.18.7",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  }
+}

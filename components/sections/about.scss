@@ -1,0 +1,122 @@
+.main{
+    width: 100vw;
+    padding-top: 20px;
+    //justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    overflow-x: hidden;
+
+    & h1{
+        font-size: 32px;
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+    & p{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: normal;
+        font-size: 18px;
+        overflow: wrap;
+        line-height: 24px;
+
+        & a{
+            color: var(--primary);
+            font-weight: 500;
+        }
+    }
+
+    &__para_container{
+        border-radius: 8px;
+        box-shadow: none;
+        background-color: #fff;
+        width: 60%;
+        transition: 0.3s ease;
+        box-shadow: 0px 4px 15px 0 hsla(0, 0%, 0%, 0.2);
+        border-left: 6px solid var(--primary);
+
+        &:hover{
+            box-shadow: var(--shadow-hover);
+        }
+    }
+
+    &__skills_container{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        & h1{
+            font-size: 26px;
+        }
+    }
+
+    &__skill_img{
+        height: auto;
+        width: 180px;
+        position: absolute;
+        margin-bottom: 20px;
+    }
+
+    &__skill_card{
+        background-color: #fff;
+        box-shadow: var(--shadow);
+        height: 150px;
+        width: 220px;
+        margin: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        border-bottom: 6px solid var(--primary);
+        padding: 5px;
+    }
+
+    &__skill_title{
+        display:none;
+    }
+
+    &__card_container{
+        display: flex;
+        flex-wrap: wrap;
+        //width: 100%;
+        justify-content: center;
+        margin-left: 100px;
+        margin-right: 100px;
+
+        @media(max-width: 900px){
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+
+
+    @media(max-width: 670px){
+        &__para_container{
+            width: 90%;
+        }
+
+        & p{
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    @media(max-width: 550px){
+        &__para_container{
+            margin-top: 10%;
+        }
+
+        &__skills_container{
+            display: none;
+        }
+    }
+}
+
+.spacer{
+    flex: 1;
+}
