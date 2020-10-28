@@ -12,7 +12,7 @@ class About extends Component {
 				</div>
 				<div className={styles.main__para_container}>
 					<p>
-						{/* I am a 13 year old student studying in{' '}
+						I am a 13 year old student studying in{' '}
 						<a href="http://dpsnoida.co.in" target="_blank">
 							Delhi Public School Noida
 						</a>
@@ -25,8 +25,8 @@ class About extends Component {
 						love building things that help people and new
 						technologies intrigue me. I am extremely passionate
 						about learning new stuff and try my best to learn
-						something new everyday. */}
-						Dummy text: Its function as a filler or as a tool for
+						something new everyday.
+						{/* Dummy text: Its function as a filler or as a tool for
 					comparing the visual impression of different typefaces Dummy
 					text is text that is used in the publishing industry or by
 					web designers to occupy the space which will later be filled
@@ -35,7 +35,7 @@ class About extends Component {
 					'fill text'. It is said that song composers of the past used
 					dummy texts as lyrics when writing melodies in order to have
 					a 'ready-made' text to sing with the melody. Dummy texts
-					have been in use by typesetters since the 16th century.
+					have been in use by typesetters since the 16th century. */}
 					</p>
 				</div>
 				<div className={styles.main__skills_container}>

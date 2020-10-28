@@ -85,7 +85,9 @@ const Home = () => {
 					<a href="mailto:arnavbansal101@gmail.com">
 						<GMail className={styles.main__icon} />
 					</a>
-					<Twitter className={styles.main__icon} />
+					<a href="https://twitter.com/ArnavBa91854224">
+						<Twitter className={styles.main__icon} />
+					</a>
 					<LinkedIn className={styles.main__icon} />
 				</div>
 			</div>
