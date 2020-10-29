@@ -19,8 +19,8 @@ const Home = () => {
 		'a coding enthusiast',
 		'an eSpician!',
 	];
-	const delay = 200;
-	const backDelay = 100;
+	const delay = 150;
+	const backDelay =80;
 	const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
 	useEffect(() => {
