@@ -1,0 +1,20 @@
+.footer{
+    width: 100vw;
+    height: 70px;
+    background-color: var(--primary);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main{
+    &__icon{
+        margin-right: 2px;
+        margin-left: 2px;
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+    }
+}

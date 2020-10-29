@@ -16,14 +16,13 @@
 	}
 
 	&__logo img {
-        margin-left: 1em;
-        height: 50px;
-        color: var(--primary);
+		margin-left: 1em;
+		height: 50px;
+		color: var(--primary);
 
-        @media(max-width: 650px){
-            padding-left: auto;
-        }
-
+		@media (max-width: 650px) {
+			padding-left: auto;
+		}
 	}
 
 	&__spacer {
@@ -36,21 +35,21 @@
 
 		&:last-child {
 			padding-right: 10px;
-        }
-        
-        @media(max-width: 650px){
-            &{
-                display: none;
-            }
-        }
+		}
+
+		@media (max-width: 650px) {
+			& {
+				display: none;
+			}
+		}
 	}
 
 	&__link {
 		padding: 0 1rem;
 		font-weight: 600;
 		cursor: pointer;
-        position: relative;
-        font-size: 18px;
+		position: relative;
+		font-size: 18px;
 
 		&::before {
 			content: '';
@@ -72,8 +71,7 @@
 		&:hover::before {
 			right: 0;
 		}
-    }
-    
+	}
 }
 
 .sidebar {
@@ -86,46 +84,46 @@
 	max-width: 300px;
 	width: 80vw;
 	z-index: 3;
-    border-radius: 5px;
-    background-color: var(--primary);
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-out;
+	border-radius: 5px;
+	background-color: var(--primary);
+	justify-content: center;
+	align-items: center;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease-out;
 
-    &__open{
-        transform: translateX(0);
-    }
+	&__open {
+		transform: translateX(0);
+	}
 
-    &__logo{
-        height: 120px;
-        width: 120px;
-        background-color: #fff;
-        border-radius: 80px;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10vh;
-    }
+	&__logo {
+		height: 120px;
+		width: 120px;
+		background-color: #fff;
+		border-radius: 80px;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+		margin-top: 10vh;
+	}
 
-    &__logo img{
-        height: 60px;
-        margin-top: 25px;
-    }
+	&__logo img {
+		height: 60px;
+		margin-top: 25px;
+	}
 
 	&__toggle {
 		background: transparent;
 		border: none;
-        cursor: pointer;
-        margin-left: 20px;
+		cursor: pointer;
+		margin-left: 20px;
 
 		&:focus {
 			outline: none;
-        }
-        
-        @media(min-width: 650px){
-            display: none;
-        }
+		}
+
+		@media (min-width: 650px) {
+			display: none;
+		}
 	}
 
 	& ul {
@@ -134,37 +132,10 @@
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
-        align-items: center;
-        margin-top: 20vh;
+		align-items: center;
+		margin-top: 20vh;
 		&:first-child {
 			margin-top: 1vh;
-		}
-
-		& li {
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
-			width: 240px;
-			padding: 16px 0;
-			border-radius: 40px;
-			transition:  0.3s ease-in;
-            margin-right: 50px;
-            font-weight: 600;
-            font-size: 20px;
-            cursor: pointer;
-            color: #fff;
-            border-width: 1px;
-            border-style: solid;
-            border-color: transparent;
-            margin-top: 5px;
-
-			&:not(:last-child) {
-				margin-bottom: 5px;
-			}
-
-			&:hover {
-                border-color: #fff;
-			}
 		}
 	}
 }
@@ -177,4 +148,54 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+}
+
+.active {
+	color: var(--primary);
+}
+
+.sidebar_active {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 240px;
+	padding: 16px 0;
+	border-radius: 40px;
+	transition: 0.3s ease-in;
+	font-weight: 600;
+	font-size: 20px;
+	cursor: pointer;
+	color: #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #fff;
+	margin-top: 5px;
+	margin-right: 50px;
+}
+
+.sidebar_inactive{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 240px;
+	padding: 16px 0;
+	border-radius: 40px;
+	transition: 0.3s ease-in;
+	margin-right: 50px;
+	font-weight: 600;
+	font-size: 20px;
+	cursor: pointer;
+	color: #fff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
+	margin-top: 5px;
+
+	&:not(:last-child) {
+		margin-bottom: 5px;
+	}
+
+	&:hover {
+		border-color: #fff;
+	}
 }

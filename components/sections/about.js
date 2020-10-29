@@ -6,7 +6,7 @@ import { useEffect, Component } from 'react';
 class About extends Component {
 	render() {
 		return (
-			<div className={styles.main}>
+			<div className={styles.main} id="about">
 				<div>
 					<h1>About Me</h1>
 				</div>
@@ -85,6 +85,32 @@ class About extends Component {
 							<img
 								className={styles.main__skill_img}
 								src="skills/firebase.png"
+							></img>
+							<div className={styles.spacer}></div>
+							<div className={styles.main__skill_title}>Firebase</div>
+						</div>
+						<div className={styles.main__skill_card}>
+							<img style={{height: '70px', width: '100px'}}
+								className={styles.main__skill_img}
+								src="skills/sass.png"
+							></img>
+							<div className={styles.spacer}></div>
+							<div className={styles.main__skill_title}>Firebase</div>
+						</div>
+						<div className={styles.main__skill_card}>
+							<img
+								style={{height: '90px', width: 'auto'}}
+								className={styles.main__skill_img}
+								src="skills/html.png"
+							></img>
+							<div className={styles.spacer}></div>
+							<div className={styles.main__skill_title}>Firebase</div>
+						</div>
+						<div className={styles.main__skill_card}>
+							<img
+								style={{height: '90px', width: 'auto'}}
+								className={styles.main__skill_img}
+								src="skills/css.png"
 							></img>
 							<div className={styles.spacer}></div>
 							<div className={styles.main__skill_title}>Firebase</div>

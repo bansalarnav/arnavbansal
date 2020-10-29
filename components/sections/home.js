@@ -5,7 +5,7 @@ import GitHub from '../../public/icons/github.svg';
 import GMail from '../../public/icons/mail.svg';
 import Twitter from '../../public/icons/twitter.svg';
 import LinkedIn from '../../public/icons/linkedin.svg';
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 const Home = () => {
 	const [wordIndex, setWordIndex] = useState(0);
@@ -60,7 +60,7 @@ const Home = () => {
 	}, [trash]);
 
 	return (
-		<div className={styles.main}>
+		<div className={styles.main} id="home">
 			<div className={styles.left_padding}>
 				{' '}
 				<div className={styles.main__heading}>
@@ -88,12 +88,11 @@ const Home = () => {
 					<a href="https://twitter.com/ArnavBa91854224">
 						<Twitter className={styles.main__icon} />
 					</a>
-					<LinkedIn className={styles.main__icon} />
 				</div>
 			</div>
-			<div className={styles.arrow}>
-				<a href="#home"></a>
-			</div>
+				<div className={styles.arrow}>
+				  <Link to="about" smooth={true}></Link>
+				</div>
 		</div>
 	);
 };

@@ -1,0 +1,114 @@
+.main{
+    width: 100vw;
+    padding-top: 20px;
+    //justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    & h1{
+        font-size: 30px;
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+    &__proj_card{
+        background-color: #fff;
+        box-shadow: 0px 4px 15px 0 hsla(0, 0%, 0%, 0.2);
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 250px;
+        margin: 15px;
+        padding: 8px;
+        border-radius: 8px;
+        border-left: 6px solid var(--primary);
+        position: relative;
+
+        & img{
+            height: 130px;
+            width: 130px;
+           // margin-top: 40px;
+            //border: 1px solid #000;
+            margin-left: 22%;
+            margin-top: 20px;
+            //position: abolsute;
+            //margin-bottom: 20%;
+        }
+
+
+        & h4{
+            padding-top: 24px;
+            font-size: 20px;
+            color: #000;
+            text-align: center;
+            margin-bottom: -10px;
+        }
+
+        & p{
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        &:hover{
+            .main__backdrop{
+                //background-color: red;
+                //display: block;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        &:not(:hover){
+            .main__backdrop{
+                //background-color: red;
+                //display: block;
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+    }
+
+    &__backdrop{
+        height: 300px;
+        width: 250px;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 20;
+        position: absolute;
+        top: 0;
+        left: -6px;
+        border-radius: 8px;
+        //display: none;
+        visibility: hidden;
+        transition: 0.9s ease;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        flex-direction: column;
+
+        & div{
+            margin-top: 12px;
+        }
+
+        &__icon{
+            margin-left: 4px;
+            margin-right: 4px;
+            cursor: pointer;
+        }
+    }
+
+    &__products_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+}

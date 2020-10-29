@@ -68,12 +68,12 @@ const Background = ({ children }) => {
 					number: {
 						density: {
 							enable: true,
-							value_area: 600,
+							value_area: 700,
 						},
 						value: 50,
 					},
 					opacity: {
-						value: 0.5,
+						value: 0.3,
 					},
 					shape: {
 						type: 'circle',

@@ -1,6 +1,6 @@
 .main{
     width: 100vw;
-    padding-top: 20px;
+    padding-top: 40px;
     //justify-content: center;
     align-items: center;
     display: flex;
@@ -63,7 +63,7 @@
 
     &__skill_card{
         background-color: #fff;
-        box-shadow: var(--shadow);
+        box-shadow: 0px 4px 15px 0 hsla(0, 0%, 0%, 0.2);
         height: 150px;
         width: 220px;
         margin: 10px 10px;
@@ -74,6 +74,11 @@
         border-radius: 8px;
         border-bottom: 6px solid var(--primary);
         padding: 5px;
+        transition: 0.5s ease;
+
+        &:hover{
+            box-shadow: var(--shadow-hover)
+        }
     }
 
     &__skill_title{
@@ -87,12 +92,15 @@
         justify-content: center;
          margin-left: 40px;
          margin-right: 40px;
-         margin-bottom: 100px;
+         margin-bottom: 30px;
 
         @media(max-width: 900px){
-            margin-right: 20px;
-            margin-left: 20px;
+            &{
+                margin-right: 20px;
+                margin-left: 20px;
+            }
         }
+
     }
 
 
