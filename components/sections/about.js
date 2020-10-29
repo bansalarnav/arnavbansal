@@ -115,6 +115,15 @@ class About extends Component {
 							<div className={styles.spacer}></div>
 							<div className={styles.main__skill_title}>Firebase</div>
 						</div>
+						<div className={styles.main__skill_card}>
+							<img
+								style={{height: '70px', width: 'auto'}}
+								className={styles.main__skill_img}
+								src="skills/arduino.png"
+							></img>
+							<div className={styles.spacer}></div>
+							<div className={styles.main__skill_title}>Firebase</div>
+						</div>
 					</div>
 				</div>
 			</div>
