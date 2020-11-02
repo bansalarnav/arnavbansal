@@ -75,6 +75,15 @@ class About extends Component {
 						</div>
 						<div className={styles.main__skill_card}>
 							<img
+								style={{height: '70px', width: 'auto'}}
+								className={styles.main__skill_img}
+								src="skills/nextjs.png"
+							></img>
+							<div className={styles.spacer}></div>
+							<div className={styles.main__skill_title}>Express.js</div>
+						</div>
+						<div className={styles.main__skill_card}>
+							<img
 								className={styles.main__skill_img}
 								src="skills/mongodb.png"
 							></img>
