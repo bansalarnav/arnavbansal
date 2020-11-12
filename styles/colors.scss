@@ -1,13 +1,12 @@
-:root{
-    --font: 'Inter', Arial, Helvetica, sans-serif;
+:root {
+	--font: 'Inter', Arial, Helvetica, sans-serif;
 
-	--shadow: 0px 4px 6px 0 hsla(0, 0%, 0%, 0.2);
-    --shadow-hover: 0px 4px 6px 0 hsla(0, 0%, 0%, 0.25);
-    
-    --primary: #8471F8;
-    --secondary: #6952F5;
+	--shadow: 0px 4px 4px 0 hsla(0, 0%, 0%, 0.2);
+	--shadow-hover: 0px 4px 6px 0 hsla(0, 0%, 0%, 0.25);
 
-    
+	--primary: #5e5ce6;
+	--secondary: #5e5ce6;
+
 	// --primary: #0779e4;
 	// --secondary: #2395ff;
 }

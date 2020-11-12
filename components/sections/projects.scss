@@ -58,7 +58,7 @@
                 //background-color: red;
                 //display: block;
                 visibility: visible;
-                opacity: 1;
+                opacity: 0.99;
             }
         }
 
@@ -75,7 +75,8 @@
     &__backdrop{
         height: 300px;
         width: 250px;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: var(--primary);
+        opacity: 0;
         z-index: 20;
         position: absolute;
         top: 0;
@@ -83,18 +84,25 @@
         border-radius: 8px;
         //display: none;
         visibility: hidden;
-        transition: 0.9s ease;
-        opacity: 0;
+        transition: 0.8s ease;
         display: flex;
-        justify-content: center;
+        //justify-content: center;
         align-items: center;
         color: #fff;
         font-size: 18px;
         font-weight: 500;
         flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 30px;
 
-        & div{
-            margin-top: 12px;
+
+        & p{
+            color: white;
+            font-size: 15px;
+            margin-left: 18px;
+            margin-right: 18px;
+            line-height: 19px;
+            padding-top: auto;
         }
 
         &__icon{

@@ -45,10 +45,10 @@ const Background = ({ children }) => {
 				},
 				particles: {
 					color: {
-						value: '#6952F5',
+						value: '#5e5ce6',
 					},
 					links: {
-						color: '#8471F8',
+						color: '#5e5ce6',
 						distance: 150,
 						enable: true,
 						opacity: 0.5,
@@ -73,7 +73,7 @@ const Background = ({ children }) => {
 						value: 50,
 					},
 					opacity: {
-						value: 0.3,
+						value: 0.6,
 					},
 					shape: {
 						type: 'circle',

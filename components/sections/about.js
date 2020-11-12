@@ -41,98 +41,44 @@ class About extends Component {
 				<div className={styles.main__skills_container}>
 					<h1>My Skills</h1>
 					<div className={styles.main__card_container}>
-						<div className={styles.main__skill_card}>
-							<img
-								className={styles.main__skill_img}
-								src="skills/flutter.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>Flutter</div>
-						</div>
-						<div className={styles.main__skill_card}>
-							<img
-								className={styles.main__skill_img}
-								src="skills/react.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>React.js</div>
-						</div>
-						<div className={styles.main__skill_card}>
-							<img
-								className={styles.main__skill_img}
-								src="skills/nodejs.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>Node.js</div>
-						</div>
-						<div className={styles.main__skill_card}>
-							<img
-								className={styles.main__skill_img}
-								src="skills/express.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>Express.js</div>
-						</div>
-						<div className={styles.main__skill_card}>
-							<img
-								style={{height: '70px', width: 'auto'}}
-								className={styles.main__skill_img}
-								src="skills/nextjs.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>Express.js</div>
-						</div>
-						<div className={styles.main__skill_card}>
-							<img
-								className={styles.main__skill_img}
-								src="skills/mongodb.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>MongoDB</div>
-						</div>
-						<div className={styles.main__skill_card}>
-							<img
-								className={styles.main__skill_img}
-								src="skills/firebase.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>Firebase</div>
-						</div>
-						<div className={styles.main__skill_card}>
-							<img style={{height: '70px', width: '100px'}}
-								className={styles.main__skill_img}
-								src="skills/sass.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>Firebase</div>
-						</div>
-						<div className={styles.main__skill_card}>
-							<img
-								style={{height: '90px', width: 'auto'}}
-								className={styles.main__skill_img}
-								src="skills/html.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>Firebase</div>
-						</div>
-						<div className={styles.main__skill_card}>
-							<img
-								style={{height: '90px', width: 'auto'}}
-								className={styles.main__skill_img}
-								src="skills/css.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>Firebase</div>
-						</div>
-						<div className={styles.main__skill_card}>
-							<img
-								style={{height: '70px', width: 'auto'}}
-								className={styles.main__skill_img}
-								src="skills/arduino.png"
-							></img>
-							<div className={styles.spacer}></div>
-							<div className={styles.main__skill_title}>Firebase</div>
-						</div>
+						<SkillCard
+						  skill="flutter"
+						/>
+						<SkillCard
+							skill="react"
+						/>
+						<SkillCard
+							skill="nodejs"
+						/>
+						<SkillCard
+							skill="express"
+						/>
+						<SkillCard
+							skill="nextjs"
+							style={{height: '70px', width: 'auto'}}
+						/>
+						<SkillCard
+						  skill="mongodb"
+						/>
+						<SkillCard
+							skill="firebase"
+						/>
+						<SkillCard
+							skill="sass"
+							style={{height: '70px', width: '100px'}}
+						/>
+						<SkillCard
+							skill="html"
+							style={{height: '90px', width: 'auto'}}
+						/>
+						<SkillCard
+							skill="css"
+							style={{height: '90px', width: 'auto'}}
+						/>
+						<SkillCard
+							skill="arduino"
+							style={{height: '70px', width: 'auto'}}
+						/>
 					</div>
 				</div>
 			</div>
@@ -141,3 +87,15 @@ class About extends Component {
 }
 
 export default About;
+
+const SkillCard = ({ skill, style }) => {
+	return <div className={styles.main__skill_card}>
+	<img
+		style={style}
+		className={styles.main__skill_img}
+		src={`skills/${skill}.png`}
+	></img>
+	<div className={styles.spacer}></div>
+	<div className={styles.main__skill_title}>Firebase</div>
+</div>
+}
