@@ -97,7 +97,7 @@ const SideDrawer = ({ show, active, setActive }) => {
 	return (
 		<nav className={cx(styles.sidebar, show ? styles.sidebar__open : '')}>
 			<div className={styles.sidebar__logo}>
-				<img src="/arnav-black.png"></img>
+				<img src="/arnav-primary.png"></img>
 			</div>
 			<ul>
 				<li
