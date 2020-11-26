@@ -76,7 +76,7 @@ const Home = () => {
 					</span>
 				</h4>
 				<div className={styles.main__icon_container}>
-					<a href="https://github.com/tperm94">
+					<a href="https://github.com/arnavbansal11">
 						<GitHub className={styles.main__icon} />
 					</a>
 					<a href="https://www.youtube.com/channel/UC_NeoKWxHaEykI8RAp6lvbg?view_as=subscriber">
