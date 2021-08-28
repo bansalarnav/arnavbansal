@@ -6,6 +6,7 @@ const Meta = ({ children }) => {
 			<Head>
 				<meta charSet="utf-8" />
 				<meta httpEquiv="x-ua-compatible" content="ie=edge" />
+		                <meta name="keywords" content="arnav bansal, arnav, bansal, espice, dps noida, dpsn, smartjab, smart jab, swadeshi tech, swadeshitech, st, quizar, quizaar" />
 				<meta name="theme-color" content="#0779e4" />
 				<link rel="shortcut icon" href="" type="image/x-icon" />
 				<title>Arnav Bansal</title>
