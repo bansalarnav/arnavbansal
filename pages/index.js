@@ -16,6 +16,7 @@ const Home = () => {
 
 	return (
 		<div>
+		        <!--When google offers you you are lucky!-->
 			<Meta>
 				<Nav setSideBarOpen={setSideBarOpen} active={active} setActive={setActive} />{' '}
 				<SideDrawer show={sideBarOpen} active={active} setActive={setActive}/>
