@@ -16,7 +16,7 @@ const Home = () => {
 
 	return (
 		<div>
-		        <div dangerouslySetInnerHTML={{ __html: `<!-- ${When google offers you you are lucky!} -->` }} />
+		        <div dangerouslySetInnerHTML={{ __html: `<!--When google offers you you are lucky!-->` }} />
 			<Meta>
 				<Nav setSideBarOpen={setSideBarOpen} active={active} setActive={setActive} />{' '}
 				<SideDrawer show={sideBarOpen} active={active} setActive={setActive}/>
